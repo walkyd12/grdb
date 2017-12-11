@@ -7,6 +7,7 @@
 #include <string.h>
 #include "config.h"
 #include "graph.h"
+#include "cli.h"
 
 /* Clear the vertex data structure */
 void
@@ -25,7 +26,7 @@ vertex_file_init(int gidx, int cidx)
 
 	/* Create component vertex file */
 	memset(s, 0, BUFSIZE);
-	sprintf(s, "%s/%d/%d/v", GRDBDIR, gidx, cidx);
+	sprintf(s, "%s/%d/%d/v", grdbdir, gidx, cidx);
 #if _DEBUG
 	printf("vertex_file_init: open vertex file %s\n", s);
 #endif

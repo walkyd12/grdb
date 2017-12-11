@@ -3,6 +3,7 @@
 
 
 #include <stdlib.h>
+#include <sys/types.h>
 #include "schema.h"
 #include "tuple.h"
 #include "vertexid.h"
